@@ -6,13 +6,16 @@ from selenium.webdriver.common.by import By
 from random import random
 
 ## Login to the main page:
-# 1.) Type "python -i tinder_bot.py" in the terminal to use the bot interactively 
-# 2.) Type "Bot = TinderBot()" in the terminal to activate the bot
-# 3.) Type "bot.login()" to invoke the login function so the bot will login to tinder
-# 4.) Wait for the bot to login
+# 1.) Run the python script or use it interactively. 
+# 2.) "Bot = TinderBot()" activates the bot itself
+# 3.) The "login()" function is invoked so the bot will login to tinder.
+# 4.) Wait for the bot to login.
 
-## Type "bot.auto_swipe()" in the terminal to tell the bot to right swipe continuously while pausing a few seconds and 
-## randomly swiping right or left to avoid Tinder's bot ban.
+## The bot uses "auto_swipe()" function to tell the bot to continuously swipe for 45 minutes while 
+## pausing a few seconds and randomly swiping right (73% of the time) or left (27% of the time) to 
+## avoid Tinder's bot ban. The bot swipes every second and the counter prints out each second until 
+## reaching 2700 seconds (45 minutes). you may want to get tinder plus to allow unlimited swipes 
+## so the bot can reach the full 45 minutes.
 
 class TinderBot():
     def __init__(self):
